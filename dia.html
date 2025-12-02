@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Metro Sheet Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- important for responsiveness -->
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Vanta.js Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+<style>
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;   /* responsive scaling */
+  height: auto;
+}
+</style>
+</head>
+<body>
+  <!-- Vanta Background -->
+  <div id="vanta-bg"></div>
+
+  <!-- Calculator Wrapper -->
+   <img class="d-block mx-auto mb-3" src="f0b48573a2cf896f15f0fb8368188318.png" alt="Kitty" width="200" height="200">
+  <div class="calc-wrapper">
+    <h1 class="calc-title">DIA CALCULATOR</h1>
+
+    <!-- Input field -->
+    <input type="number" id="dia" class="calc-input" placeholder="Enter dia value">
+<input type="number" id="userVal" class="calc-input" placeholder="Enter value (used for - and ×)">
+<input type="number" id="quantity" class="calc-input" placeholder="Enter quantity (optional)">
+<button class="calc-btn" onclick="calculateDia()">Calculate</button>
+<h2 id="result" class="calc-result">Result: </h2>
+
+  <script src="dia.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
