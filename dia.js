@@ -25,10 +25,11 @@ function calculateDia() {
   const totalFormatted = totalResult.toFixed(3);
 
   document.getElementById("result").innerText =
-    `Result for 1 dia: ${singleFormatted} | For ${quantity} dias: ${totalFormatted}`;
+    `1 dia: ${singleFormatted} | For ${quantity} dias: ${totalFormatted}`;
 
   // ✅ Save to history
   const history = JSON.parse(localStorage.getItem("calcHistory")) || [];
   history.push(`Dia → input:${dia}, userVal:${userVal}, qty:${quantity} → single:${singleFormatted}, total:${totalFormatted}`);
   localStorage.setItem("calcHistory", JSON.stringify(history));
 }
+
